@@ -14,6 +14,6 @@ To add file - git add filename
 
 Make commit - git commit -m "Created commit"
 
-For pusing file - git push origin main
+For pushing file - git push origin main
 
 To pull - git pull
