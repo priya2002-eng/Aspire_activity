@@ -1,4 +1,4 @@
-Git
+GIT Demo
 
 This is the file I have created for practicing Git.
 
