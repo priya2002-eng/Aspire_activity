@@ -1,6 +1,6 @@
 // Built-in functions
 // Author : Priyadharshini S
-// Create Date: 20/03-/2024
+// Create Date: 20/03/2024
 
 const banks = ["SBI", "IOB", "HDFC","IDBI", "Canara"];
 console.log(banks);
