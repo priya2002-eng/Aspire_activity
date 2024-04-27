@@ -1,21 +1,21 @@
-class Dog {
-    makeSound() {
-        console.log("Woof! Woof!");
+class Manager {
+    makePlan() {
+        console.log("Working on Project");
     }
 }
 
-class Cat {
-    makeSound() {
-        console.log("Meow! Meow!");
+class TeamLead {
+    makePlan() {
+        console.log("Make Design");
     }
 }
 
-interface Animal {
-    makeSound(): void;
+interface Employee {
+    makePlan(): void;
 }
 
-let myDog: Animal = new Dog();
-let myCat: Animal = new Cat();
+let manager: Employee = new Manager();
+let teamlead: Employee = new TeamLead();
 
-myDog.makeSound(); 
-myCat.makeSound(); 
+manager.makePlan(); 
+teamlead.makePlan(); 
