@@ -14,8 +14,8 @@ var e_1, _a;
 var set = new Set();
 set.add(10);
 set.add(20);
-set.add("Apple");
-set.add("Apple");
+set.add("Developer");
+set.add("Tester");
 set.add(7.85);
 console.log("Elements in the Set:");
 try {
