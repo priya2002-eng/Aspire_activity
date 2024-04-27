@@ -1,20 +1,20 @@
-var Dog = /** @class */ (function () {
-    function Dog() {
+var Manager = /** @class */ (function () {
+    function Manager() {
     }
-    Dog.prototype.makeSound = function () {
-        console.log("Woof! Woof!");
+    Manager.prototype.makePlan = function () {
+        console.log("Working on Project");
     };
-    return Dog;
+    return Manager;
 }());
-var Cat = /** @class */ (function () {
-    function Cat() {
+var TeamLead = /** @class */ (function () {
+    function TeamLead() {
     }
-    Cat.prototype.makeSound = function () {
-        console.log("Meow! Meow!");
+    TeamLead.prototype.makePlan = function () {
+        console.log("Make Design");
     };
-    return Cat;
+    return TeamLead;
 }());
-var myDog = new Dog();
-var myCat = new Cat();
-myDog.makeSound();
-myCat.makeSound();
+var manager = new Manager();
+var teamlead = new TeamLead();
+manager.makePlan();
+teamlead.makePlan();
