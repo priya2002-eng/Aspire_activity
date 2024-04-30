@@ -16,7 +16,6 @@ app.get('/', (req, res) => {
 app.post('/submit', (req, res) => {
   const { username, password, mobile, email } = req.body;
 
-  // Create user object
   const user = {
     username,
     password,
@@ -24,7 +23,6 @@ app.post('/submit', (req, res) => {
     email
   };
 
-  // Read existing data from dbconn.json
   fs.readFile('dbconn.json', 'utf8', (err, data) => {
     if (err && err.code !== 'ENOENT') {
       console.error(err);
@@ -43,10 +41,8 @@ app.post('/submit', (req, res) => {
       }
     }
 
-    // Append new user to the array
     users.push(user);
 
-    // Write updated data back to dbconn.json with pretty formatting
     fs.writeFile('dbconn.json', JSON.stringify(users, null, 2), (writeErr) => {
       if (writeErr) {
         console.error(writeErr);
