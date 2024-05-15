@@ -1,0 +1,32 @@
+<p>account works!</p>
+
+Choose Account Type:<select [(ngModel)]="accountType">
+    <option>Savings</option>
+    <option>Business</option>
+    <option>Salary</option>
+</select>
+<table>
+    <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Account Holder Name</th>
+            <th>Type of Account</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @for (account of accounts; track account) {
+            <tr>
+                @if (account.amount>20000 && account.accountType==accountType){
+                    <td>{{account.accountNumber}}</td>
+                    <td>{{account.accountHolderName}}</td>
+                    <td>{{account.accountType}}</td>
+                    <td>{{account.amount}}</td>
+                    <td>{{account.date}}</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

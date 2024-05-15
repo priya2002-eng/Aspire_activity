@@ -1,0 +1,34 @@
+<p>shop works!</p>
+
+<!-- ngModel -->
+<label for="shopname"></label>
+<input [(ngModel)]="shop.shopName" id ="shopname">
+<p>{{shop.shopName}}</p>
+
+<!-- ngIf -->
+<div *ngIf="showMessage">
+    This message will be shown conditionally.
+</div>
+
+<!-- ngFor -->
+<ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<!-- ngSwitch -->
+<div [ngSwitch]="value">
+    <p *ngSwitchCase="'A'">Value is A</p>
+    <p *ngSwitchCase="'B'">Value is B</p>
+    <p *ngSwitchDefault>Value is neither A nor B</p>
+</div>
+
+<!-- ngClass -->
+<div [ngClass]="{ 'active': isActive, 'disabled': isDisabled }">
+    Dynamic Class Binding
+</div>
+
+<!-- ngStyle -->
+<div [ngStyle]="{ 'color': isActive ? 'green' : 'red', 'font-size.px': fontSize }">
+    Dynamic Style Binding
+</div>
+
