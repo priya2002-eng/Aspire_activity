@@ -5,3 +5,55 @@
 .disabled {
     opacity: 0.5;
 }
+
+#shopname {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  [showMessage] {
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+ 
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px 0;
+  }
+  
+  [ngSwitch] {
+    margin-bottom: 10px;
+  }
+  
+  [ngSwitchCase], [ngSwitchDefault] {
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .ngClass-container {
+    margin-bottom: 10px;
+  }
+  
+  .dynamic-class {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .dynamic-style {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
