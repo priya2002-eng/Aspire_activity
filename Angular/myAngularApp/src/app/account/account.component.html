@@ -19,12 +19,17 @@ Choose Account Type:<select [(ngModel)]="accountType">
     <tbody>
         @for (account of accounts; track account) {
             <tr>
-                @if (account.amount>20000 && account.accountType==accountType){
+                @if (account.accountType==accountType){
                     <td>{{account.accountNumber}}</td>
                     <td>{{account.accountHolderName}}</td>
                     <td>{{account.accountType}}</td>
                     <td>{{account.amount}}</td>
                     <td>{{account.date}}</td>
+                    <td [ngSwitch]="getAccountStatus(account.amount)">
+                        <span *ngSwitchCase="'Inactive'">Inactive</span>
+                        <span *ngSwitchCase="'Active'">Active</span>
+                        <span *ngSwitchCase="'Loyal'">Loyal</span>
+                    </td>
                 }
             </tr>
         }
