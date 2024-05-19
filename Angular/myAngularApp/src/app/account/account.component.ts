@@ -24,4 +24,14 @@ export class AccountComponent {
   {accountNumber:74569823651, accountHolderName:"Deepthi",accountType:"Business",amount:55800,date:"13-09-1972"},
   {accountNumber:32148695246, accountHolderName:"Manu",accountType:"Salary",amount:95000,date:"20-03-1985"},
   ];
+
+  getAccountStatus(amount: number): string {
+    if (amount < 10000) {
+      return 'Inactive';
+    } else if (amount >= 10000 && amount < 25000) {
+      return 'Active';
+    } else {
+      return 'Loyal';
+    }
+  }
 }
