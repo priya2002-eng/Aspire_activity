@@ -1,7 +1,7 @@
-<!-- Title: Types of Binding and directives 
+<!-- Title: Exploring the concepts in Angular like Binding, Directives, Routing, Pipes
 Author: Priyadharshini S
 Created Date: 13/05/2024
-Last modified date: 15/05/2024 -->
+Last modified date: 19/05/2024 -->
 
 <h1>Welcome to Angular</h1>
 
@@ -10,4 +10,44 @@ Last modified date: 15/05/2024 -->
 <app-shop></app-shop> -->
 
 <!-- <app-product></app-product> -->
-<app-account></app-account>
+<!-- <app-account></app-account> -->
+
+<a [routerLink]="'shop'">Shop</a> &nbsp;
+<a [routerLink]="'product'">View Products</a> &nbsp;
+<a [routerLink]="'student'">Student Details</a> &nbsp;
+<a [routerLink]="'account'">Account Details</a> &nbsp;
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<!-- custom pipes -->
+
+{{10|cube}} <br/>
+{{'male' | gender}} <br/>
+{{'female' | gender}} <br/>
+{{36 | shirtSize}} <br/>
+{{38 | shirtSize}} <br/>
+{{40 | shirtSize}} <br/>
+
+<!-- Built-in pipes -->
+
+{{154578|currency:'INR'}} <br/>
+{{154812|currency:'USD'}} <br/>
+{{title|uppercase}} <br/>
+{{title|lowercase}} <br/>
+{{joinDate|date:'fullDate'}} <br/>
+{{joinDate|date:'shortDate'}} <br/>
+{{joinDate|date:'shortTime'}} <br/>
+{{joinDate|date:'fullTime'}} <br/>
+{{joinDate|date:'dd/MM/yyyy'}} <br/>
+{{joinDate|date:'d/M/yy'}} <br/>
+{{[1,5,2,3,6,8,4]|slice:3}} <br/>
+{{[1,5,2,3,6,8,4]|slice:3:5}} <br/>
+{{[1,5,2,3,6,8,4]|slice:3:-1}} <br/>
+{{[1,5,2,3,6,8,4]|slice:3:-2}} <br/>
+{{[1,5,2,3,6,8,4]|slice:-5:-2}} <br/>
+{{[1,5,2,3,6,8,4]|slice:-2}} <br/>
+
+
+
