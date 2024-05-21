@@ -1,0 +1,135 @@
+<!-- navbar -->
+
+<div class="background-image" id="navbar">
+    <div class="navbar">
+      <div class="app-name">
+        <img src="assets/logo.jpg" alt="Logo">
+        Art Gallery
+      </div>
+      <ul>
+        <li><a href="#nav">Home</a></li>
+        <li><a href="#arts">Arts</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </div>
+</div>
+  
+<div class="content-overlay">
+    <h1>Welcome to Art Gallery</h1>
+    <h3>Discover the beauty within every brushstroke.</h3>
+</div>
+
+<!-- arts -->
+<div class="arts"  id="arts">
+    <h1>Welcome to the fond of Arts</h1>
+    <div class="gallery-container">
+        <div class="art-card" *ngFor="let art of artworks">
+            <img src="{{ art.image }}" alt="Art image">
+            <div class="art-details">
+                <h2>{{ art.title }}</h2>
+                <h4>by {{ art.author }}</h4>
+                <p>{{ art.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- blog -->
+<div class="blog"  id="blog">
+  
+    <div class="blog-container">
+        <h1>Blogging: turning thoughts into digital art</h1>
+        <div class="blog-post" *ngFor="let post of blogPosts">
+            <img class="blog-image" [src]="post.image" alt="Blog Image">
+            <div class="blog-content">
+                <h2>{{ post.title }}</h2>
+                <p><em>By {{ post.author }}, {{ post.date }}</em></p>
+                <div [innerHTML]="post.content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- about-us -->
+<div class="about-container" id="about-us">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <div class="about-text">
+        <p>Welcome to our Art Gallery!</p>
+        <p>At our gallery, we strive to showcase the beauty and diversity of artistic expression. From breathtaking landscapes to captivating abstract compositions, our collection celebrates the talent and creativity of artists from around the world.</p>
+        <p>Our mission is to provide a platform for artists to share their work and for art enthusiasts to discover new pieces that inspire and evoke emotion. Whether you're a seasoned collector or a casual admirer, we invite you to explore our gallery and experience the wonder of art.</p>
+      </div>
+    </div>
+    <div class="about-image">
+      <img src="assets/about.jpg" alt="About Us Image">
+    </div>
+</div>
+  
+<!-- contact-us -->
+<div class="contact-container" id="contact-us">
+    <div class="contact-content">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="contact">Submit</button>
+      </form>
+    </div>
+</div>
+  
+  
+<!-- login -->
+<div class="login-container" id="login">
+    <h2>Login to Art Gallery</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+      </div>
+      <div class="form-group forgot-password-group">
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  
+<!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Art Gallery</h3>
+        <p>123 Gallery Street, Cityville, Country</p>
+        <p>Email: info&#64;artgallery.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <!-- <div class="social-media-icons">
+            <a href="#"><fa-icon [icon]="facebookIcon"></fa-icon></a>
+            <a href="#"><fa-icon [icon]="twitterIcon"></fa-icon></a>
+            <a href="#"><fa-icon [icon]="instagramIcon"></fa-icon></a>
+        </div>           -->
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+    </div>
+  </footer>
+  
