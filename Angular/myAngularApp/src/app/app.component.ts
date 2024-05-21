@@ -9,11 +9,12 @@ import { CommonModule } from '@angular/common';
 import { CubePipe } from './cube.pipe';
 import { GenderPipe } from './gender.pipe';
 import { ShirtSizePipe } from './shirt-size.pipe';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule,CubePipe,GenderPipe,ShirtSizePipe,AccountComponent, RouterLink,CommonModule],
+  imports: [RouterOutlet, FormsModule,CubePipe,GenderPipe,ShirtSizePipe,AccountComponent, RouterLink,CommonModule,HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
