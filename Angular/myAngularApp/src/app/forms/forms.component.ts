@@ -43,50 +43,7 @@ export class FormsComponent {
 
 
   // reactive-forms
-  // registrationForm: FormGroup;
-  // message: string = '';
-
-  // constructor(private fb: FormBuilder, private userService: UserService) {
-  //   this.registrationForm = this.fb.group({
-  //     fullName: ['', Validators.required],
-  //     email: ['', [Validators.required, Validators.email]],
-  //     employeeId: ['', Validators.required],
-  //     department: ['', Validators.required],
-  //     username: ['', Validators.required],
-  //     password: ['', [Validators.required, Validators.minLength(6)]],
-  //     confirmPassword: ['', Validators.required]
-  //   }, { validators: this.passwordMatchValidator });
-  // }
-
-  // ngOnInit(): void {}
-
-  // passwordMatchValidator(form: AbstractControl): { [key: string]: boolean } | null {
-  //   if (form.get('password')?.value !== form.get('confirmPassword')?.value) {
-  //     return { 'mismatch': true };
-  //   }
-  //   return null;
-  // }
-
-  // onSubmit(): void {
-  //   if (this.registrationForm.valid) {
-  //     const userData = this.registrationForm.value;
-  //     this.userService.registerUser(userData).subscribe(
-  //       response => {
-  //         this.message = 'Registration successful!';
-  //         this.registrationForm.reset();
-  //       },
-  //       error => {
-  //         this.message = 'Registration failed. Please try again.';
-  //         console.error('Registration failed:', error);
-  //       }
-  //     );
-  //   } else {
-  //     this.message = 'Form is not valid. Please check the fields.';
-  //   }
-  // }
-
-
-
+ 
   registrationForm: FormGroup = this.fb.group({
     fullName: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
