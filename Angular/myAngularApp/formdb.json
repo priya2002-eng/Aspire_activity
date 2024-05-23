@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "fullName": "priya",
+      "email": "priya@gmail.com",
+      "employeeId": "1245",
+      "department": "software engineer",
+      "username": "priya",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 1
+    },
+    {
+      "fullName": "Aditya",
+      "email": "adi@gmail.com",
+      "employeeId": "123456",
+      "department": "Developer",
+      "username": "aditya",
+      "password": "adi123",
+      "confirmPassword": "adi123",
+      "id": 2
+    },
+    {
+      "fullName": "adi",
+      "email": "priya@gmail.com",
+      "employeeId": "198745123",
+      "department": "tester",
+      "username": "adi",
+      "password": "147258",
+      "confirmPassword": "147258",
+      "id": 3
+    },
+    {
+      "fullName": "adi",
+      "email": "priya@gmail.com",
+      "employeeId": "198745123",
+      "department": "tester",
+      "username": "adi",
+      "password": "147258",
+      "confirmPassword": "147258",
+      "id": 4
+    },
+    {
+      "fullName": "adi",
+      "email": "priya@gmail.com",
+      "employeeId": "198745123",
+      "department": "tester",
+      "username": "adi",
+      "password": "147258",
+      "confirmPassword": "147258",
+      "id": 5
+    },
+    {
+      "fullName": "adi",
+      "email": "priya@gmail.com",
+      "employeeId": "198745123",
+      "department": "tester",
+      "username": "adi",
+      "password": "147258",
+      "confirmPassword": "147258",
+      "id": 6
+    },
+    {
+      "fullName": "adi",
+      "email": "priya@gmail.com",
+      "employeeId": "198745123",
+      "department": "tester",
+      "username": "adi",
+      "password": "147258",
+      "confirmPassword": "147258",
+      "id": 7
+    },
+    {
+      "fullName": "adi",
+      "email": "priya@gmail.com",
+      "employeeId": "198745123",
+      "department": "tester",
+      "username": "adi",
+      "password": "147258",
+      "confirmPassword": "147258",
+      "id": 8
+    },
+    {
+      "fullName": "adi",
+      "email": "priya@gmail.com",
+      "employeeId": "198745123",
+      "department": "tester",
+      "username": "adi",
+      "password": "147258",
+      "confirmPassword": "147258",
+      "id": 9
+    },
+    {
+      "fullName": "adi",
+      "email": "priya@gmail.com",
+      "employeeId": "198745123",
+      "department": "tester",
+      "username": "adi",
+      "password": "147258",
+      "confirmPassword": "147258",
+      "id": 10
+    },
+    {
+      "fullName": "Zuhale",
+      "email": "zuhale@gmail.com",
+      "employeeId": "456321",
+      "department": "tester",
+      "username": "zuhale",
+      "password": "789632",
+      "confirmPassword": "789632",
+      "id": 11
+    },
+    {
+      "fullName": "Zoya",
+      "email": "zoya@gmail.com",
+      "employeeId": "456321",
+      "department": "developer",
+      "username": "zoya",
+      "password": "zoya123",
+      "confirmPassword": "zoya123",
+      "id": 12
+    }
+  ]
+}
