@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ELMS</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="leave_history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="assets/icon.png">
+            <br>
+            <ul>
+                <li><a href="apply_leave.html"><i class="fa-solid fa-user-tie"></i>Apply Leave</a></li>
+                <li><a href="leave_history.html"><i class="fa-solid fa-book"></i>Leave History</a></li>
+            </ul> 
+        </div>
+        <div class="main_content">
+            <div class="header" style="font-size: large;"><b><h2>ELMS</h2></b>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn" id="logoutBtn" >Logout</button>
+                </div>
+            </div>  
+            <!-- Include the content of employee.html here -->
+            <div class="body-table">
+                <div class="container-table">
+                  <div class="header-table">
+                    <h1>Manage Leave History</h1>
+                  </div>
+                
+                  <div class="table-container">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Type</th>
+                          <th>Conditions</th>
+                          <th>From</th>
+                          <th>To</th>
+                          <th>Applied</th>
+                          <th>Admin Remark</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Casual leave</td>
+                          <td>I need work from home</td>
+                          <td>2024-04-13</td>
+                          <td>2024-04-15</td>
+                          <td>2024-04-12</td>
+                          <td class="pending">
+                            <i class="fa-regular fa-clock"></i>
+                            Pending
+                          </td>
+                        </tr>
+                
+                        <tr>
+                            <td>Medical leave</td>
+                            <td>I had a injury in my leg</td>
+                            <td>2024-07-02</td>
+                            <td>2024-07-10</td>
+                            <td>2024-07-01</td>
+                            <td class="approved">
+                              <i class="fas fa-check-circle"></i>
+                              Approved
+                            </td>
+                        </tr>
+      
+                        <tr>
+                            <td>Personal Time Off</td>
+                            <td>Having some personal works</td>
+                            <td>2024-11-25</td>
+                            <td>2024-11-26</td>
+                            <td>2024-11-22</td>
+                            <td class="declined">
+                              <i class="fa fa-window-close"></i>
+                              Declined
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div> 
+        </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 ELMS. All rights reserved.</p>
+    </footer>
+    <script src="apply_leave.js"></script>
+</body>
+</html>
+

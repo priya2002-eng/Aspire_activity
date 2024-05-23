@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ELMS</title>
+  <link rel="stylesheet" href="manage_leave.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="home.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+  
+        <img src="assets/icon.png">
+        <br>
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="employeesection.html"><i class="fas fa-address-card"></i>Employee Section</a></li>
+            <li><a href="leave_types.html"><i class="fas fa-calendar"></i>Leave Types</a></li>
+            <li><a href="manage_leave.html"><i class="fas fa-project-diagram"></i>Manage Leave</a></li>
+        </ul> 
+        <!-- <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div> -->
+    </div>
+    <div class="main_content">
+        <div class="header" style="font-size: large;"><b><h2>ELMS</h2></b>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" id="logoutBtn" >Logout</button>
+          </div>
+          <!-- <button type="button">Admin</button> -->
+        </div>  
+        
+        <!-- Include the content of employee.html here -->
+        <div class="body-table">
+          <div class="container-table">
+            <div class="header-table">
+              <h1>Manage Leave</h1>
+            </div>
+          
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Leave Type</th>
+                    <th>Applied On</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td>EL12345</td>
+                    <td>John Doe</td>
+                    <td>Personal Time Off</td>
+                    <td>13/04/2024</td>
+                    <td class="pending">
+                        <i class="fa-regular fa-clock"></i>
+                        Pending
+                    </td>
+                    <td>
+                      <button class="view-btn" id="addEmployeeBtn">View Details</button>
+                    </td>
+                  </tr>
+          
+                  <tr>
+                    <td></td>
+                    <td>EL78654</td>
+                    <td>Rinku</td>
+                    <td>Medical Leave</td>
+                    <td>21/03/2024</td>
+                    <td class="approved">
+                        <i class="fas fa-check-circle"></i>
+                        Approved
+                    </td>
+                    <td>
+                      <button class="view-btn">View Details</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td></td>
+                    <td>EL65486</td>
+                    <td>Joe</td>
+                    <td>Personal Time Off</td>
+                    <td>21/01/2024</td>
+                    <td class="declined">
+                        <i class="fa fa-window-close"></i>
+                        Declined
+                    </td>
+                    <td>
+                      <button class="view-btn">View Details</button>
+                    </td>
+                  </tr>
+                  <!-- Add more rows as needed -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div> 
+
+          <!-- card html -->
+        <section class="container" id="addEmployeeForm">
+          <i class="fa fa-times-circle close-icon" id="closeFormAdd"></i>
+          <header>Employee Details</header>
+          <form action="#" class="form">
+            <div class="details">
+              <table class="border">
+                <tr>
+                  <td><span class="label">Employee ID</span></td>
+                  <td><span class="colon">:</span></td>
+                  <td><span class="value">12345</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Employee Name</span></td>
+                  <td><span class="colon">:</span></td>
+                  <td><span class="value">John Doe</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Leave Type</span></td>
+                  <td><span class="colon">:</span></td>
+                  <td><span class="value">Vacation</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Description</span></td>
+                  <td><span class="colon">:</span></td>
+                  <td><span class="value">Family trip</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Start Date</span></td>
+                  <td><span class="colon">:</span></td>
+                  <td><span class="value">2024-05-01</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">End Date</span></td>
+                  <td><span class="colon">:</span></td>
+                  <td><span class="value">2024-05-10</span></td>
+                </tr>
+              </table>
+              <div class="action">
+                <button class="approve-btn">Approve</button>
+                <button class="decline-btn">Decline</button>
+              </div>
+            </div>
+          </form>
+        </section>
+        
+    </div>
+</div>
+<footer>
+  <p>&copy; 2024 ELMS. All rights reserved.</p>
+</footer>
+<script src="manage_leave.js"></script>
+</body>
+</html>
