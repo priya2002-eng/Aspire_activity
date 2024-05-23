@@ -1,0 +1,119 @@
+<!-- <div class="container">
+    <h1>Reactive Registration Form</h1>
+    <div class="form-wrapper">
+      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" formControlName="fullName">
+          <div *ngIf="registrationForm.controls['fullName'].invalid && registrationForm.controls['fullName'].touched">
+            Full Name is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email">
+          <div *ngIf="registrationForm.controls['email'].invalid && registrationForm.controls['email'].touched">
+            Enter a valid email.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="employeeId">Employee ID:</label>
+          <input type="text" id="employeeId" formControlName="employeeId">
+          <div *ngIf="registrationForm.controls['employeeId'].invalid && registrationForm.controls['employeeId'].touched">
+            Employee ID is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="department">Department:</label>
+          <input type="text" id="department" formControlName="department">
+          <div *ngIf="registrationForm.controls['department'].invalid && registrationForm.controls['department'].touched">
+            Department is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" formControlName="username">
+          <div *ngIf="registrationForm.controls['username'].invalid && registrationForm.controls['username'].touched">
+            Username is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" formControlName="password">
+          <div *ngIf="registrationForm.controls['password'].invalid && registrationForm.controls['password'].touched">
+            Password must be at least 6 characters.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" formControlName="confirmPassword">
+          <div *ngIf="registrationForm.hasError('mismatch') && registrationForm.controls['confirmPassword'].touched">
+            Passwords must match.
+          </div>
+        </div>
+        <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+      </form>
+    </div>
+  </div> -->
+
+
+
+  <div class="container">
+    <h1>Reactive Registration Form</h1>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <div class="form-wrapper">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" formControlName="fullName">
+          <div *ngIf="registrationForm.get('fullName')?.invalid && registrationForm.get('fullName')?.touched" class="error">
+            Full name is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email">
+          <div *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched" class="error">
+            Invalid email
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="employeeId">Employee ID:</label>
+          <input type="text" id="employeeId" formControlName="employeeId">
+          <div *ngIf="registrationForm.get('employeeId')?.invalid && registrationForm.get('employeeId')?.touched" class="error">
+            Employee ID is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="department">Department:</label>
+          <input type="text" id="department" formControlName="department">
+          <div *ngIf="registrationForm.get('department')?.invalid && registrationForm.get('department')?.touched" class="error">
+            Department is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" formControlName="username">
+          <div *ngIf="registrationForm.get('username')?.invalid && registrationForm.get('username')?.touched" class="error">
+            Username is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" formControlName="password">
+          <div *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched" class="error">
+            Password is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" formControlName="confirmPassword">
+          <div *ngIf="registrationForm.errors?.['mismatch'] && registrationForm.get('confirmPassword')?.touched" class="error">
+            Passwords must match
+          </div>
+        </div>
+        <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+        <p [ngClass]="messageClass">{{ message }}</p>
+      </div>
+    </form>
+  </div>
+  
