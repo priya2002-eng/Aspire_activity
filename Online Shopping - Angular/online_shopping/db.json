@@ -1,0 +1,1933 @@
+{
+  "users": [
+    {
+      "name": "Priya",
+      "email": "priya@gmail.com",
+      "password": "priya123",
+      "mobile": "8569742563",
+      "id": "1"
+    },
+    {
+      "name": "Rosy",
+      "email": "rosy@gmail.com",
+      "password": "rosy123",
+      "mobile": "7459863215",
+      "id": "2"
+    },
+    {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "password": "john123",
+      "mobile": "7584236512",
+      "id": "3"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Running Shoes",
+      "brand": "Sneakers",
+      "shortDescription": "Comfortable running shoes",
+      "image": "/assets/shoes/run_shoes.webp",
+      "rating": 4,
+      "price": 575,
+      "majorCategory": "Shoes",
+      "minorCategory": "Running",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Mesh and synthetic"
+        },
+        {
+          "key": "Sole",
+          "value": "Rubber"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "JohnDoe",
+          "rating": 4,
+          "comment": "Great shoes for running!"
+        },
+        {
+          "username": "JaneDoe",
+          "rating": 5,
+          "comment": "Very comfortable and supportive."
+        }
+      ],
+      "colors": [
+        "Red",
+        "Blue",
+        "Green"
+      ],
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Basketball Shoes",
+      "brand": "Adidas",
+      "shortDescription": "High performance basketball shoes",
+      "image": "/assets/shoes/basket.jpg",
+      "rating": 5,
+      "price": 150,
+      "majorCategory": "Shoes",
+      "minorCategory": "Hiking",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Leather and synthetic"
+        },
+        {
+          "key": "Sole",
+          "value": "Rubber"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "BasketFan23",
+          "rating": 5,
+          "comment": "Excellent performance on the court."
+        },
+        {
+          "username": "ProPlayer",
+          "rating": 5,
+          "comment": "Best basketball shoes I've ever worn."
+        }
+      ],
+      "colors": [
+        "Maroon",
+        "Yellow",
+        "Purple"
+      ],
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Casual Sneakers",
+      "brand": "Nike",
+      "shortDescription": "Stylish casual sneakers",
+      "image": "/assets/shoes/casual.jpg",
+      "rating": 4,
+      "price": 90,
+      "majorCategory": "Shoes",
+      "minorCategory": "Running",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Canvas"
+        },
+        {
+          "key": "Sole",
+          "value": "Rubber"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "JohnSmith",
+          "rating": 4,
+          "comment": "Great for casual outings!"
+        },
+        {
+          "username": "EmilyJones",
+          "rating": 5,
+          "comment": "Love the style and comfort."
+        }
+      ],
+      "colors": [
+        "Black",
+        "White",
+        "Gray"
+      ],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Hiking Boots",
+      "brand": "Bata",
+      "shortDescription": "Durable hiking boots",
+      "image": "/assets/shoes/hiking.webp",
+      "rating": 5,
+      "price": 120,
+      "majorCategory": "Shoes",
+      "minorCategory": "Hiking",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Leather and synthetic"
+        },
+        {
+          "key": "Sole",
+          "value": "Vibram rubber"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "MikeBrown",
+          "rating": 5,
+          "comment": "Excellent grip and durability."
+        },
+        {
+          "username": "SarahClark",
+          "rating": 4,
+          "comment": "Comfortable for long hikes."
+        }
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Formal Shoes",
+      "brand": "Puma",
+      "shortDescription": "Elegant formal shoes",
+      "image": "/assets/shoes/shoes2.jpg",
+      "rating": 3,
+      "price": 200,
+      "majorCategory": "Shoes",
+      "minorCategory": "Formal",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Leather"
+        },
+        {
+          "key": "Sole",
+          "value": "Synthetic"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "OliviaDavis",
+          "rating": 3,
+          "comment": "Nice design but a bit tight."
+        },
+        {
+          "username": "NoahWilson",
+          "rating": 2,
+          "comment": "Not very comfortable for long wear."
+        }
+      ],
+      "colors": [
+        "Black",
+        "Brown"
+      ],
+      "sizes": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Formal Shoes",
+      "brand": "Nika",
+      "shortDescription": "Stylish formal wears",
+      "image": "/assets/shoes/shoes3.jpg",
+      "rating": 3,
+      "price": 80,
+      "majorCategory": "Shoes",
+      "minorCategory": "Formal",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Synthetic"
+        },
+        {
+          "key": "Sole",
+          "value": "Rubber"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "SophiaTaylor",
+          "rating": 4,
+          "comment": "Good for occasional use."
+        },
+        {
+          "username": "JamesWilson",
+          "rating": 3,
+          "comment": "Decent quality for the price."
+        }
+      ],
+      "colors": [
+        "Black",
+        "Blue",
+        "Gray"
+      ],
+      "sizes": [
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Comfortable Sandals",
+      "brand": "Teva",
+      "shortDescription": "Lightweight & comfortable",
+      "image": "/assets/sandals/sandal3.jpg",
+      "rating": 4,
+      "price": 60,
+      "majorCategory": "Shoes",
+      "minorCategory": "Sandals",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Synthetic"
+        },
+        {
+          "key": "Sole",
+          "value": "Rubber"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "HappyFeet",
+          "rating": 4,
+          "comment": "Super comfortable sandals!"
+        },
+        {
+          "username": "BeachLover",
+          "rating": 5,
+          "comment": "Perfect for long walks on the beach."
+        }
+      ],
+      "colors": [
+        "Black",
+        "Brown",
+        "Blue"
+      ],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Outdoor Sandals",
+      "brand": "Merrell",
+      "shortDescription": "Durable outdoor sandals for adventures",
+      "image": "/assets/sandals/sandals5.jpg",
+      "rating": 5,
+      "price": 600,
+      "majorCategory": "Shoes",
+      "minorCategory": "Fashion",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Leather"
+        },
+        {
+          "key": "Sole",
+          "value": "Vibram"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "AdventureSeeker",
+          "rating": 5,
+          "comment": "Amazing grip and durability!"
+        },
+        {
+          "username": "TrailBlazer",
+          "rating": 4,
+          "comment": "Great for hiking and outdoor activities."
+        }
+      ],
+      "colors": [
+        "Gray",
+        "Green",
+        "Orange"
+      ],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Beach Sandals",
+      "brand": "Reef",
+      "shortDescription": "Stylish sandals perfect for the beach",
+      "image": "/assets/sandals/sandals4.jpg",
+      "rating": 4,
+      "price": 45,
+      "majorCategory": "Shoes",
+      "minorCategory": "Sandals",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Textile"
+        },
+        {
+          "key": "Sole",
+          "value": "EVA"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "BeachBum",
+          "rating": 4,
+          "comment": "Great for beach walks and sand activities."
+        },
+        {
+          "username": "SunAndSea",
+          "rating": 5,
+          "comment": "Very comfortable and stylish for the beach."
+        }
+      ],
+      "colors": [
+        "Yellow",
+        "Red",
+        "Blue"
+      ],
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Casual Sandals",
+      "brand": "Adidas",
+      "shortDescription": "Classic sandals for everyday wear",
+      "image": "/assets/sandals/sandals6.jpg",
+      "rating": 3,
+      "price": 50,
+      "majorCategory": "Shoes",
+      "minorCategory": "Sandals",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Synthetic"
+        },
+        {
+          "key": "Sole",
+          "value": "Rubber"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "CasualChic",
+          "rating": 3,
+          "comment": "Decent sandals for daily wear."
+        },
+        {
+          "username": "FashionForward",
+          "rating": 2,
+          "comment": "Not as durable as expected."
+        }
+      ],
+      "colors": [
+        "Black",
+        "White",
+        "Brown"
+      ],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Fashion Sandals",
+      "brand": "Teva",
+      "shortDescription": "Trendy fashion sandals for a chic look",
+      "image": "/assets/sandals/sandals2.jpg",
+      "rating": 5,
+      "price": 800,
+      "majorCategory": "Shoes",
+      "minorCategory": "Fashion",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Synthetic"
+        },
+        {
+          "key": "Sole",
+          "value": "Rubber"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "StyleIcon",
+          "rating": 5,
+          "comment": "Absolutely love the trendy design!"
+        },
+        {
+          "username": "Fashionista",
+          "rating": 4,
+          "comment": "Perfect addition to my chic wardrobe."
+        }
+      ],
+      "colors": [
+        "Purple",
+        "Pink",
+        "Gold"
+      ],
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Sporty Sandals",
+      "brand": "Merrell",
+      "shortDescription": "Sporty sandals for active lifestyle",
+      "image": "/assets/sandals/sandals1.jpg",
+      "rating": 4,
+      "price": 55,
+      "majorCategory": "Shoes",
+      "minorCategory": "Sandals",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Synthetic"
+        },
+        {
+          "key": "Sole",
+          "value": "EVA"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "ActiveLifer",
+          "rating": 4,
+          "comment": "Great support and comfort for outdoor activities."
+        },
+        {
+          "username": "FitnessFanatic",
+          "rating": 4,
+          "comment": "Durable and ideal for workouts and hikes."
+        }
+      ],
+      "colors": [
+        "Blue",
+        "Black",
+        "Gray"
+      ],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Lipstick",
+      "brand": "Maybelline",
+      "shortDescription": "Long-lasting lipstick for vibrant lips",
+      "image": "/assets/cosmetics/lipstick.webp",
+      "rating": 4,
+      "price": 10,
+      "majorCategory": "Cosmetics",
+      "minorCategory": "Lipstick",
+      "specifications": [
+        {
+          "key": "Type",
+          "value": "Long-lasting"
+        },
+        {
+          "key": "Finish",
+          "value": "Matte"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "LipstickLover",
+          "rating": 4,
+          "comment": "Beautiful color and long-lasting."
+        },
+        {
+          "username": "BeautyQueen",
+          "rating": 5,
+          "comment": "My favorite lipstick! Lasts all day."
+        }
+      ],
+      "colors": [
+        "Red",
+        "Pink",
+        "Nude"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Foundation",
+      "brand": "L'Oréal",
+      "shortDescription": "Smooth and flawless foundation",
+      "image": "/assets/cosmetics/foundation.jpg",
+      "rating": 5,
+      "price": 15,
+      "majorCategory": "Cosmetics",
+      "minorCategory": "Makeup",
+      "specifications": [
+        {
+          "key": "Coverage",
+          "value": "Medium to Full"
+        },
+        {
+          "key": "Finish",
+          "value": "Natural"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "FoundationFanatic",
+          "rating": 5,
+          "comment": "Amazing coverage and blends seamlessly."
+        },
+        {
+          "username": "MakeupGuru",
+          "rating": 5,
+          "comment": "My go-to foundation for a flawless look."
+        }
+      ],
+      "colors": [
+        "Ivory",
+        "Beige",
+        "Tan"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Eyeshadow Palette",
+      "brand": "Urban Decay",
+      "shortDescription": "Highly pigmented for eye-looks",
+      "image": "/assets/cosmetics/eyeshadow.jpg",
+      "rating": 4,
+      "price": 1000,
+      "majorCategory": "Cosmetics",
+      "minorCategory": "Eyekit",
+      "specifications": [
+        {
+          "key": "Shades",
+          "value": "12"
+        },
+        {
+          "key": "Finish",
+          "value": "Matte and Shimmer"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "EyeCatcher",
+          "rating": 4,
+          "comment": "Beautiful colors and blends easily."
+        },
+        {
+          "username": "MakeupAddict",
+          "rating": 5,
+          "comment": "My favorite eyeshadow palette!"
+        }
+      ],
+      "colors": [
+        "Neutral",
+        "Smoky",
+        "Bright"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Mascara",
+      "brand": "Covergirl",
+      "shortDescription": "Volumizing mascara for bold lashes",
+      "image": "/assets/cosmetics/mascara.jpg",
+      "rating": 4,
+      "price": 12,
+      "majorCategory": "Cosmetics",
+      "minorCategory": "Eyekit",
+      "specifications": [
+        {
+          "key": "Effect",
+          "value": "Volumizing"
+        },
+        {
+          "key": "Color",
+          "value": "Black"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "LashLover",
+          "rating": 4,
+          "comment": "Gives my lashes a dramatic volume."
+        },
+        {
+          "username": "MascaraFan",
+          "rating": 4,
+          "comment": "Great mascara for everyday wear."
+        }
+      ],
+      "colors": [
+        "Black",
+        "Brown"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Blush",
+      "brand": "NARS",
+      "shortDescription": "Silky blush for a natural flush",
+      "image": "/assets/cosmetics/blush.jpg",
+      "rating": 3,
+      "price": 25,
+      "majorCategory": "Cosmetics",
+      "minorCategory": "Makeup",
+      "specifications": [
+        {
+          "key": "Finish",
+          "value": "Matte"
+        },
+        {
+          "key": "Pigmentation",
+          "value": "Highly Pigmented"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "BlushingBeauty",
+          "rating": 3,
+          "comment": "Nice color but not very long-lasting."
+        },
+        {
+          "username": "MakeupEnthusiast",
+          "rating": 4,
+          "comment": "Beautiful blush, blends well."
+        }
+      ],
+      "colors": [
+        "Pink",
+        "Coral",
+        "Peach"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Highlighter",
+      "brand": "Maybelline",
+      "shortDescription": "Glowing highlighter for radiant skin",
+      "image": "/assets/cosmetics/highliter.jpg",
+      "rating": 5,
+      "price": 1200,
+      "majorCategory": "Cosmetics",
+      "minorCategory": "Makeup",
+      "specifications": [
+        {
+          "key": "Finish",
+          "value": "Shimmery"
+        },
+        {
+          "key": "Intensity",
+          "value": "Buildable"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "GlowGetter",
+          "rating": 5,
+          "comment": "Love this highlighter, gives a natural glow."
+        },
+        {
+          "username": "HighlightQueen",
+          "rating": 5,
+          "comment": "My holy grail highlighter!"
+        }
+      ],
+      "colors": [
+        "Champagne",
+        "Gold",
+        "Rose Gold"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Lipstick",
+      "brand": "Lakme",
+      "shortDescription": "Smooth and flawless lipstick",
+      "image": "/assets/cosmetics/lipstick2.jpg",
+      "rating": 5,
+      "price": 15,
+      "majorCategory": "Cosmetics",
+      "minorCategory": "Lipstick",
+      "specifications": [
+        {
+          "key": "Finish",
+          "value": "Satin"
+        },
+        {
+          "key": "Color",
+          "value": "Red"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "LipstickLover2",
+          "rating": 5,
+          "comment": "Beautiful color and long-lasting formula."
+        },
+        {
+          "username": "BeautyBlogger",
+          "rating": 5,
+          "comment": "Gorgeous lipstick, highly recommend!"
+        }
+      ],
+      "colors": [
+        "Red",
+        "Pink",
+        "Nude"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Compact",
+      "brand": "L'Oréal",
+      "shortDescription": "Smooth and oil free foundation for all-day wear",
+      "image": "/assets/cosmetics/compact.jpg",
+      "rating": 4,
+      "price": 15,
+      "majorCategory": "Cosmetics",
+      "minorCategory": "Makeup",
+      "specifications": [
+        {
+          "key": "Coverage",
+          "value": "Medium"
+        },
+        {
+          "key": "Finish",
+          "value": "Matte"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "MakeupLover",
+          "rating": 4,
+          "comment": "Great for touch-ups throughout the day."
+        },
+        {
+          "username": "BeautyBlogger2",
+          "rating": 4,
+          "comment": "My go-to compact for a matte finish."
+        }
+      ],
+      "colors": [
+        "Ivory",
+        "Beige",
+        "Tan"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Casual Chain",
+      "brand": "Tanishq",
+      "shortDescription": "Elegant casual chain for daily wear",
+      "image": "/assets/accessories/chain1.jpg",
+      "rating": 4,
+      "price": 100,
+      "majorCategory": "Accessories",
+      "minorCategory": "Chains",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Gold-plated metal"
+        },
+        {
+          "key": "Length",
+          "value": "18 inches"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "ChainLover",
+          "rating": 4,
+          "comment": "Perfect length and looks elegant."
+        },
+        {
+          "username": "Fashionista",
+          "rating": 4,
+          "comment": "Great chain for everyday wear."
+        }
+      ],
+      "colors": [
+        "Gold",
+        "Silver"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Stylish Chain",
+      "brand": "Bluestone",
+      "shortDescription": "Trendy stylish chain for a chic look",
+      "image": "/assets/accessories/chain2.jpg",
+      "rating": 4,
+      "price": 1500,
+      "majorCategory": "Accessories",
+      "minorCategory": "Chains",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Sterling Silver"
+        },
+        {
+          "key": "Length",
+          "value": "20 inches"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "StyleIcon",
+          "rating": 4,
+          "comment": "Love the design, perfect for any outfit."
+        },
+        {
+          "username": "ChainAddict",
+          "rating": 4,
+          "comment": "Great quality and stylish."
+        }
+      ],
+      "colors": [
+        "Silver"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Fashion Chain",
+      "brand": "Zaveri Pearls",
+      "shortDescription": "Fashionable for special occasions",
+      "image": "/assets/accessories/chain3.jpg",
+      "rating": 5,
+      "price": 150,
+      "majorCategory": "Accessories",
+      "minorCategory": "Chains",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Imitation pearls and metal"
+        },
+        {
+          "key": "Length",
+          "value": "22 inches"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "Fashionista2",
+          "rating": 5,
+          "comment": "Absolutely stunning, great quality."
+        },
+        {
+          "username": "PearlLover",
+          "rating": 5,
+          "comment": "Beautiful pearls, adds elegance."
+        }
+      ],
+      "colors": [
+        "White",
+        "Gold"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Casual Earrings",
+      "brand": "Tanishq",
+      "shortDescription": "Beautiful casual earrings for everyday use",
+      "image": "/assets/accessories/earing2.webp",
+      "rating": 4,
+      "price": 80,
+      "majorCategory": "Accessories",
+      "minorCategory": "Earrings",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Gold"
+        },
+        {
+          "key": "Design",
+          "value": "Hoop earrings"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "EarringLover",
+          "rating": 4,
+          "comment": "Comfortable and elegant design."
+        },
+        {
+          "username": "Fashionista3",
+          "rating": 4,
+          "comment": "Great for daily wear, lightweight."
+        }
+      ],
+      "colors": [
+        "Gold",
+        "Silver"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Stylish Earrings",
+      "brand": "Bluestone",
+      "shortDescription": "Elegant stylish for party wear to look unique",
+      "image": "/assets/accessories/earing3.jpg",
+      "rating": 5,
+      "price": 2500,
+      "majorCategory": "Accessories",
+      "minorCategory": "Earrings",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Diamond and Gold"
+        },
+        {
+          "key": "Design",
+          "value": "Dangle earrings"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "EarringFashion",
+          "rating": 5,
+          "comment": "Absolutely stunning, perfect for parties."
+        },
+        {
+          "username": "EarringQueen",
+          "rating": 5,
+          "comment": "Love these earrings, very elegant."
+        }
+      ],
+      "colors": [
+        "Gold"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Ethnic Earrings",
+      "brand": "Joyalukkas",
+      "shortDescription": "Beautiful ethnic earrings for special occasions",
+      "image": "/assets/accessories/earing4.jpg",
+      "rating": 5,
+      "price": 150,
+      "majorCategory": "Accessories",
+      "minorCategory": "Earrings",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Gold and Diamond"
+        },
+        {
+          "key": "Design",
+          "value": "Ethnic Jhumka earrings"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "EarringLover2",
+          "rating": 5,
+          "comment": "Beautiful craftsmanship, stunning design."
+        },
+        {
+          "username": "EthnicStyle",
+          "rating": 5,
+          "comment": "Perfect for traditional outfits."
+        }
+      ],
+      "colors": [
+        "Gold"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "27",
+      "name": "Stylish Handbag",
+      "brand": "Hidesign",
+      "shortDescription": "Stylish leather handbag",
+      "image": "/assets/accessories/purse1.jpg",
+      "rating": 5,
+      "price": 120,
+      "majorCategory": "Accessories",
+      "minorCategory": "Handpurse",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Leather"
+        },
+        {
+          "key": "Size",
+          "value": "Medium"
+        },
+        {
+          "key": "Color",
+          "value": "Brown"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "BagLover",
+          "rating": 5,
+          "comment": "Amazing quality and stylish design."
+        },
+        {
+          "username": "Fashionista4",
+          "rating": 5,
+          "comment": "Perfect for everyday use, very durable."
+        }
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "28",
+      "name": "Handpurse",
+      "brand": "Baggit",
+      "shortDescription": "Trendy hand purse",
+      "image": "/assets/accessories/purse2.jpg",
+      "rating": 4,
+      "price": 60,
+      "majorCategory": "Accessories",
+      "minorCategory": "Handpurse",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Synthetic"
+        },
+        {
+          "key": "Size",
+          "value": "Small"
+        },
+        {
+          "key": "Color",
+          "value": "Red"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "RedPurse",
+          "rating": 4,
+          "comment": "Cute and trendy design, perfect for outings."
+        },
+        {
+          "username": "HandbagLover",
+          "rating": 4,
+          "comment": "Good quality and stylish."
+        }
+      ],
+      "colors": [
+        "Red",
+        "Blue"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "29",
+      "name": "Clutch",
+      "brand": "Fossil",
+      "shortDescription": "Elegant clutch for evening events",
+      "image": "/assets/accessories/purse4.jpg",
+      "rating": 5,
+      "price": 1000,
+      "majorCategory": "Accessories",
+      "minorCategory": "Handpurse",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Synthetic"
+        },
+        {
+          "key": "Size",
+          "value": "Small"
+        },
+        {
+          "key": "Color",
+          "value": "Black"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "EveningOut",
+          "rating": 5,
+          "comment": "Perfect size and looks elegant."
+        },
+        {
+          "username": "FossilFan",
+          "rating": 5,
+          "comment": "Great quality and stylish design."
+        }
+      ],
+      "colors": [
+        "Black",
+        "Gold"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "30",
+      "name": "Leather Wallet",
+      "brand": "Hidesign",
+      "shortDescription": "Premium leather wallet",
+      "image": "/assets/accessories/pursem2.jpg",
+      "rating": 5,
+      "price": 50,
+      "majorCategory": "Accessories",
+      "minorCategory": "Handpurse",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Leather"
+        },
+        {
+          "key": "Size",
+          "value": "Medium"
+        },
+        {
+          "key": "Color",
+          "value": "Brown"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "WalletLover",
+          "rating": 5,
+          "comment": "High-quality leather and stylish design."
+        },
+        {
+          "username": "LeatherFan",
+          "rating": 5,
+          "comment": "Durable and spacious, worth the price."
+        }
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "31",
+      "name": "Handy Wallet",
+      "brand": "Baggit",
+      "shortDescription": "Stylish wallet",
+      "image": "/assets/accessories/pursem3.jpg",
+      "rating": 4,
+      "price": 2000,
+      "majorCategory": "Accessories",
+      "minorCategory": "Handpurse",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Synthetic"
+        },
+        {
+          "key": "Size",
+          "value": "Small"
+        },
+        {
+          "key": "Color",
+          "value": "Blue"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "BlueWallet",
+          "rating": 4,
+          "comment": "Cute design and good quality material."
+        },
+        {
+          "username": "Fashionista7",
+          "rating": 4,
+          "comment": "Perfect size for daily use, love the color."
+        }
+      ],
+      "colors": [
+        "Blue",
+        "Black"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "32",
+      "name": "Casual Watch",
+      "brand": "Casio",
+      "shortDescription": "Durable casual watch for daily office wear",
+      "image": "/assets/accessories/casio.jpg",
+      "rating": 4,
+      "price": 70,
+      "majorCategory": "Accessories",
+      "minorCategory": "Watch",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Stainless Steel"
+        },
+        {
+          "key": "Display",
+          "value": "Analog"
+        },
+        {
+          "key": "Water Resistance",
+          "value": "30 meters"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "WatchFan",
+          "rating": 4,
+          "comment": "Nice design and durable build."
+        },
+        {
+          "username": "CasioLover",
+          "rating": 4,
+          "comment": "Good value for money."
+        }
+      ],
+      "colors": [
+        "Silver"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "33",
+      "name": "Ethnic Watch",
+      "brand": "Titan",
+      "shortDescription": "Elegant ethnic watch for special occasions",
+      "image": "/assets/accessories/titan.jpg",
+      "rating": 5,
+      "price": 3000,
+      "majorCategory": "Accessories",
+      "minorCategory": "Watch",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Gold-plated Stainless Steel"
+        },
+        {
+          "key": "Display",
+          "value": "Analog"
+        },
+        {
+          "key": "Water Resistance",
+          "value": "50 meters"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "EthnicWatchFan",
+          "rating": 5,
+          "comment": "Beautiful design and great quality."
+        },
+        {
+          "username": "TitanLover",
+          "rating": 5,
+          "comment": "Looks amazing, perfect for special occasions."
+        }
+      ],
+      "colors": [
+        "Gold"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "34",
+      "name": "Smart Watch",
+      "brand": "Timex",
+      "shortDescription": "Durable smart watch for active lifestyle",
+      "image": "/assets/accessories/timex.jpg",
+      "rating": 5,
+      "price": 1900,
+      "majorCategory": "Accessories",
+      "minorCategory": "Watch",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Plastic"
+        },
+        {
+          "key": "Display",
+          "value": "Digital"
+        },
+        {
+          "key": "Water Resistance",
+          "value": "100 meters"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "SmartTechie",
+          "rating": 5,
+          "comment": "Great features and very durable."
+        },
+        {
+          "username": "FitnessEnthusiast",
+          "rating": 5,
+          "comment": "Perfect for tracking workouts and daily use."
+        }
+      ],
+      "colors": [
+        "Black"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "35",
+      "name": "Casual Cap",
+      "brand": "Adidas",
+      "shortDescription": "Comfortable for daily wear.",
+      "image": "/assets/hats/cap.jpg",
+      "rating": 4,
+      "price": 20,
+      "majorCategory": "Hats",
+      "minorCategory": "Casual",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Cotton"
+        },
+        {
+          "key": "Size",
+          "value": "One Size Fits All"
+        },
+        {
+          "key": "Color",
+          "value": "Black"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "CapLover",
+          "rating": 4,
+          "comment": "Great fit and comfortable material."
+        },
+        {
+          "username": "FashionEnthusiast",
+          "rating": 4,
+          "comment": "Versatile cap for everyday use."
+        }
+      ],
+      "colors": [
+        "Black",
+        "White"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "36",
+      "name": "Trendy Bucket Hat",
+      "brand": "Nike",
+      "shortDescription": "Stylish bucket hat for a casual look.",
+      "image": "/assets/hats/hat4.jpg",
+      "rating": 5,
+      "price": 1200,
+      "majorCategory": "Hats",
+      "minorCategory": "Casual",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Polyester"
+        },
+        {
+          "key": "Size",
+          "value": "Medium"
+        },
+        {
+          "key": "Color",
+          "value": "Beige"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "BucketHatFan",
+          "rating": 5,
+          "comment": "Love the style and fits perfectly."
+        },
+        {
+          "username": "Fashionista21",
+          "rating": 5,
+          "comment": "Adds a trendy touch to any outfit."
+        }
+      ],
+      "colors": [
+        "Beige",
+        "Black"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "37",
+      "name": "Fashion Fedora",
+      "brand": "Gucci",
+      "shortDescription": "Elegant fedora perfects chic outfit",
+      "image": "/assets/hats/gucci.jpg",
+      "rating": 5,
+      "price": 50,
+      "majorCategory": "Hats",
+      "minorCategory": "Trendy",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Wool"
+        },
+        {
+          "key": "Size",
+          "value": "Small/Medium"
+        },
+        {
+          "key": "Color",
+          "value": "Brown"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "FedoraFan",
+          "rating": 5,
+          "comment": "Luxurious feel and impeccable quality."
+        },
+        {
+          "username": "ChicStylist",
+          "rating": 5,
+          "comment": "Elevates any look to a new level of style."
+        }
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "38",
+      "name": "Stylish Beanie",
+      "brand": "Prada",
+      "shortDescription": "Trendy for a fashionable look.",
+      "image": "/assets/hats/prada.jpg",
+      "rating": 4,
+      "price": 30,
+      "majorCategory": "Hats",
+      "minorCategory": "Trendy",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Acrylic"
+        },
+        {
+          "key": "Size",
+          "value": "Medium"
+        },
+        {
+          "key": "Color",
+          "value": "Grey"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "BeanieLover",
+          "rating": 4,
+          "comment": "Comfortable and stylish, perfect for cold days."
+        },
+        {
+          "username": "TrendSetter87",
+          "rating": 4,
+          "comment": "Adds a cool vibe to any outfit."
+        }
+      ],
+      "colors": [
+        "Grey",
+        "Black"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "39",
+      "name": "Aviator Sunglasses",
+      "brand": "Ray-Ban",
+      "shortDescription": "Classic aviator sunglasses for a timeless look.",
+      "image": "/assets/hats/ray-ban.jpg",
+      "rating": 5,
+      "price": 650,
+      "majorCategory": "Hats",
+      "minorCategory": "Sunglasses",
+      "specifications": [
+        {
+          "key": "Frame Material",
+          "value": "Metal"
+        },
+        {
+          "key": "Lens Material",
+          "value": "Glass"
+        },
+        {
+          "key": "UV Protection",
+          "value": "100%"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "AviatorFan",
+          "rating": 5,
+          "comment": "Great quality and iconic style."
+        },
+        {
+          "username": "FashionGuru",
+          "rating": 5,
+          "comment": "Perfect for any outfit and occasion."
+        }
+      ],
+      "colors": [
+        "Black",
+        "Gold"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "40",
+      "name": "Wayfarer Sunglasses",
+      "brand": "Oakley",
+      "shortDescription": "Stylish wayfarer sunglasses for everyday wear.",
+      "image": "/assets/hats/oakley.jpg",
+      "rating": 4,
+      "price": 120,
+      "majorCategory": "Hats",
+      "minorCategory": "Sunglasses",
+      "specifications": [
+        {
+          "key": "Frame Material",
+          "value": "Plastic"
+        },
+        {
+          "key": "Lens Material",
+          "value": "Polycarbonate"
+        },
+        {
+          "key": "UV Protection",
+          "value": "99%"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "WayfarerLover",
+          "rating": 4,
+          "comment": "Comfortable and trendy design."
+        },
+        {
+          "username": "CasualChic",
+          "rating": 4,
+          "comment": "Great for everyday casual wear."
+        }
+      ],
+      "colors": [
+        "Black",
+        "Blue"
+      ],
+      "sizes": [
+        "-"
+      ]
+    },
+    {
+      "id": "41",
+      "name": "Round Sunglasses",
+      "brand": "Nike",
+      "shortDescription": "Trendy round sunglasses for a unique look.",
+      "image": "/assets/hats/round.jpg",
+      "rating": 5,
+      "price": 800,
+      "majorCategory": "Hats",
+      "minorCategory": "Sunglasses",
+      "specifications": [
+        {
+          "key": "Frame Material",
+          "value": "Metal"
+        },
+        {
+          "key": "Lens Material",
+          "value": "Plastic"
+        },
+        {
+          "key": "UV Protection",
+          "value": "100%"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "RoundShadesFan",
+          "rating": 5,
+          "comment": "Love the retro vibes of these sunglasses."
+        },
+        {
+          "username": "UniqueStyle",
+          "rating": 5,
+          "comment": "Adds a cool and unique touch to any outfit."
+        }
+      ],
+      "colors": [
+        "Black",
+        "Brown"
+      ],
+      "sizes": [
+        "-"
+      ]
+    }
+  ],
+  "cart": [
+    {
+      "id": "23",
+      "name": "Fashion Chain",
+      "brand": "Zaveri Pearls",
+      "shortDescription": "Fashionable for special occasions",
+      "image": "/assets/accessories/chain3.jpg",
+      "rating": 5,
+      "price": 150,
+      "majorCategory": "Accessories",
+      "minorCategory": "Chains",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Imitation pearls and metal"
+        },
+        {
+          "key": "Length",
+          "value": "22 inches"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "Fashionista2",
+          "rating": 5,
+          "comment": "Absolutely stunning, great quality."
+        },
+        {
+          "username": "PearlLover",
+          "rating": 5,
+          "comment": "Beautiful pearls, adds elegance."
+        }
+      ],
+      "colors": [
+        "White",
+        "Gold"
+      ],
+      "sizes": [
+        "-"
+      ],
+      "quantity": 1,
+      "userId": "2",
+      "color": "White",
+      "size": "-"
+    },
+    {
+      "id": "26",
+      "name": "Ethnic Earrings",
+      "brand": "Joyalukkas",
+      "shortDescription": "Beautiful ethnic earrings for special occasions",
+      "image": "/assets/accessories/earing4.jpg",
+      "rating": 5,
+      "price": 150,
+      "majorCategory": "Accessories",
+      "minorCategory": "Earrings",
+      "specifications": [
+        {
+          "key": "Material",
+          "value": "Gold and Diamond"
+        },
+        {
+          "key": "Design",
+          "value": "Ethnic Jhumka earrings"
+        }
+      ],
+      "reviews": [
+        {
+          "username": "EarringLover2",
+          "rating": 5,
+          "comment": "Beautiful craftsmanship, stunning design."
+        },
+        {
+          "username": "EthnicStyle",
+          "rating": 5,
+          "comment": "Perfect for traditional outfits."
+        }
+      ],
+      "colors": [
+        "Gold"
+      ],
+      "sizes": [
+        "-"
+      ],
+      "quantity": 1,
+      "userId": "2",
+      "color": "Gold",
+      "size": "-"
+    }
+  ],
+  "address": [
+    {
+      "id": "f49a",
+      "fullName": "Priyadharshini",
+      "mobileNumber": "8547236512",
+      "address": "12, Middle St, Kamaraj nagar",
+      "city": "Villupuram",
+      "state": "Tamil Nadu",
+      "pinCode": "605102",
+      "country": "India",
+      "landmark": "Primary school",
+      "userId": "1"
+    },
+    {
+      "id": "ded8",
+      "fullName": "Rosy",
+      "mobileNumber": "7459863215",
+      "address": "12, Thomas St",
+      "city": "Tira",
+      "state": "Kerala",
+      "pinCode": "452 025",
+      "country": "India",
+      "landmark": "Alagappa temple",
+      "alternateMobile": "7541285321",
+      "userId": "2"
+    },
+    {
+      "id": "003f",
+      "fullName": "Rosy",
+      "mobileNumber": "4852145879",
+      "address": "82, Rome St",
+      "city": "Thane",
+      "state": "Maharastra",
+      "pinCode": "758 254",
+      "country": "India",
+      "userId": "2"
+    }
+  ],
+  "orders": [
+    {
+      "id": 495679,
+      "userId": "1",
+      "items": [],
+      "totalPrice": 0,
+      "shippingCost": 0,
+      "finalPrice": 0,
+      "orderDate": "2024-06-25T07:11:11.235Z",
+      "status": "Delivered",
+      "deliveryDate": "Jul 4, 24"
+    },
+    {
+      "id": 703439,
+      "userId": "1",
+      "items": [],
+      "totalPrice": 0,
+      "shippingCost": 0,
+      "finalPrice": 0,
+      "orderDate": "2024-06-25T07:19:21.073Z",
+      "status": "Delivered",
+      "deliveryDate": "Jul 6, 24"
+    }
+  ]
+}

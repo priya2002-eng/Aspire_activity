@@ -1,0 +1,199 @@
+/* cart.component.css */
+
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .empty-cart-image {
+    width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .cart-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-items {
+    width: 100%;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .cart-item-image img {
+    width: 120px; /* Fixed width for all images */
+    height: 120px; /* Fixed height for all images */
+    margin-right: 20px; /* Add right margin for spacing */
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between; /* Align content and remove button to the ends */
+    align-items: center;
+  }
+  
+  .cart-item-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .cart-item-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .cart-item-price {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.3em; /* Increase price font size */
+    margin-right: auto; /* Push price to the left */
+  }
+  
+  .quantity-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    background-color: transparent; /* Remove default background color */
+    border: 1px solid #4a4e69; /* Add border for button */
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 50%; /* Make the buttons circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #4a4e69; /* Button text color */
+  }
+  
+  .quantity-btn:hover {
+    background-color:#adb0cc;/* Background color on hover */
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .quantity-controls span {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    /* background-color: #007bff; */
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  
+  .price-summary {
+    margin-top: 20px;
+    text-align: right;
+    width: 100%;
+}
+
+.price-summary p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .clear-cart-button {
+    background-color:#596ef5;
+  }
+  
+  .clear-cart-button:hover {
+    background-color: #4b5fdf;
+  }
+  
+  .place-order-button {
+    background-color: #4a4e69;
+  }
+  
+  .place-order-button:hover {
+    background-color:#888ca8;
+  }
+  
+  .remove-button {
+    padding: 7px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .remove-button:hover {
+    background-color: #c82333;
+  }
+  
+  .remove-button:disabled {
+    background-color: #dc3545;
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,72 @@
+<div class="home">
+  <div class="cover">
+    <h1>Welcome to Online Shop</h1>
+    <p>Your one-stop shop for everything!</p>
+  </div>
+
+  <div class="container">
+    <!-- Categories Section -->
+    <div class="section-title">
+      <h2>Categories</h2>
+    </div>
+    <div class="grid categories-grid">
+      <div class="card" *ngFor="let category of categories">
+        <div class="card-image">
+          <img [src]="category.image" alt="{{ category.name }}">
+        </div>
+        <div class="card-content">
+          <h3>{{ category.name }}</h3>
+        </div>
+      </div>
+    </div>
+
+      <div class="coverbg">
+      <h3>Discover the latest trends and shop with ease.</h3>
+    </div>
+
+
+    <!-- Featured Products Section -->
+    <div class="section-title">
+      <h2>Featured Products</h2>
+    </div>
+    <div class="grid products-grid">
+      <div class="card" *ngFor="let product of filteredProducts">
+        <div class="card-image">
+          <img [src]="product.image" alt="{{ product.name }}">
+        </div>
+        <div class="card-content">
+          <h3>{{ product.name }}</h3>
+          <p>{{ product.price | currency }}</p>
+          <p>{{ product.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promotions Section -->
+    <div class="section-title">
+      <h2>Promotions</h2>
+    </div>
+    <div class="grid promotions-grid">
+      <div class="card" *ngFor="let promo of promotions">
+        <div class="card-image">
+          <img [src]="promo.image" alt="{{ promo.title }}">
+        </div>
+        <div class="card-content">
+          <h3>{{ promo.title }}</h3>
+          <p>{{ promo.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Customer Testimonials Section -->
+    <div class="section-title">
+      <h2>Customer Testimonials</h2>
+    </div>
+    <div class="testimonials">
+      <div class="testimonial" *ngFor="let testimonial of testimonials">
+        <p>"{{ testimonial.text }}"</p>
+        <h4>- {{ testimonial.author }}</h4>
+      </div>
+    </div>
+  </div>
+</div>

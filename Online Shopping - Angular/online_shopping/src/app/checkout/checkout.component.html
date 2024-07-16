@@ -1,0 +1,47 @@
+<div class="checkout-container">
+  <h2>Checkout</h2>
+  <div class="steps-container">
+    <div class="step"
+         *ngFor="let stepItem of steps; let i = index" 
+         [class.completed]="step > i + 1" 
+         [class.active]="step === i + 1"
+         [class.disabled]="step <= i"
+         (click)="goToStep(i + 1)">
+      <div class="step-content">
+        <div class="step-number">{{ i + 1 }}</div>
+        <div class="step-title">{{ stepItem.title }}</div>
+      </div>
+      <div *ngIf="i < steps.length - 1" class="step-line"></div>
+    </div>
+  </div>
+
+  <div *ngIf="step === 1">
+    <app-login (loginSuccess)="onLoginSuccess($event)"></app-login>
+  </div>
+
+  <div *ngIf="step === 2">
+    <app-shipping (addressSaved)="onAddressSaved($event)"></app-shipping>
+  </div>
+
+  <div *ngIf="step === 3">
+    <app-review (continueClicked)="onContinueClicked()"></app-review>
+  </div>
+
+  <div *ngIf="step === 4">
+    <app-payment (paymentConfirmed)="onPaymentCompleted()"></app-payment>
+  </div>
+
+    <div *ngIf="step === 5" class="order-confirmation">
+    <p class="confirmation-text">
+      Thank you for your order! Your order has been confirmed.
+    </p>
+    <p class="redirecting-text">
+      Please wait! while redirecting...
+    </p>
+    <div class="image-container">
+      <img src="/assets/pay-icon/orderconfirmed.jpg" class="confirmation-image"/>
+    </div>
+  </div>
+</div>
+
+

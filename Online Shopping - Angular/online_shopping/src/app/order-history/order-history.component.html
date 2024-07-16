@@ -1,0 +1,27 @@
+ <div class="order-history-container" *ngIf="orders.length === 0">
+  <div class="no-orders">
+    <img src="/assets/no-order.png" alt="No Orders" class="no-orders-image">
+    <p class="no-orders-text">You have no orders.</p>
+    <button class="start-shopping-button" (click)="startShopping()">Start Shopping</button>
+  </div>
+</div>
+
+<div class="order-history-container" *ngIf="orders.length > 0">
+  <h2>Order History</h2>
+  <div class="order" *ngFor="let order of orders">
+    <h3>Order #{{ order.id }}</h3>
+    <p>Order Date: {{ order.orderDate | date }}</p>
+   
+  </div>
+</div>
+
+
+
+
+
+
+
+ 
+
+  
+

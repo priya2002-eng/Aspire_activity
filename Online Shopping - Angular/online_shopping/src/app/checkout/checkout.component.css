@@ -1,0 +1,117 @@
+.checkout-container {
+  margin: 30px;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  flex: 1;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Ensure the step content is above the line */
+}
+
+.step.completed .step-title,
+.step.active .step-title {
+  color: #4a4e69;
+}
+
+.step.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4a4e69;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.step-title {
+  font-weight: bold;
+}
+
+.status {
+  margin-top: 5px;
+  color: green;
+}
+
+.step-line {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 15px); /* Reduce width to fit between steps */
+  height: 2px;
+  background-color: #4a4e69;
+  z-index: 0; /* Ensure the line is behind the step content */
+}
+
+.step.completed + .step .step-line {
+  background-color:  #4a4e69;
+}
+
+.step:last-child .step-line {
+  display: none;
+}
+
+
+.order-confirmation {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.confirmation-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: green;
+}
+
+.redirecting-text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.confirmation-image {
+  max-width: 100%;
+  height: auto;
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+}

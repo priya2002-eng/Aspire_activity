@@ -1,0 +1,45 @@
+<div class="review-container">
+  <h2>Order Summary</h2>
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <div class="column cart-item-image">
+      <img [src]="item.image" alt="{{ item.name }}">
+    </div>
+    <div class="column cart-item-details">
+      <h3>{{ item.name }}</h3>
+      <p>Brand: {{ item.brand }}</p>
+      <p>Color: {{ item.color }}</p>
+      <p>Size: {{ item.size }}</p>
+      <p>Quantity: {{ item.quantity }}</p>
+    </div>
+    <div class="column cart-item-price">
+      <p class="delivery-date">Delivery by {{ item.deliveryDate }}</p>
+      <p class="price-details">
+        <span class="original-price">${{ item.price }}</span>
+        <span class="discounted-price">${{ item.discountedPrice }}</span>
+        <span class="discount-percentage">{{ item.discount }}% off</span>
+      </p>
+    </div>
+  </div>
+  <div class="summary">
+    <div class="summary-row">
+      <span>Price:</span>
+      <span class="value">${{ totalDiscountedPrice }}</span>
+    </div>
+    <div class="summary-row">
+      <span>Delivery Charges:</span>
+      <span class="value" [ngClass]="{ 'free-shipping': (shippingCost === 0) || (shippingCost < 15) }">
+        <span *ngIf="(shippingCost === 0) || (shippingCost < 15)" class="strikethrough" style="color: #999;">$0</span>
+        <span *ngIf="shippingCost > 0 && shippingCost >= 15">${{ shippingCost }}</span>
+        <span *ngIf="(shippingCost === 0) || (shippingCost < 15)" style="color: green;"> FREE</span>
+      </span>
+    </div>
+    <div class="summary-row">
+      <span class="values">Total Payable:</span>
+      <span class="values">${{ finalPrice }}</span>
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="continue-button" (click)="placeOrder()">Continue</button>
+  </div>
+</div>
+
