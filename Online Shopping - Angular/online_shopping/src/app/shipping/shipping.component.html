@@ -1,0 +1,72 @@
+<div class="shipping-container">
+  <div class="card-container">
+    <div class="address-list">
+      <div *ngFor="let address of existingAddresses" class="address-box">
+        <input type="radio" [id]="address.id" [value]="address.id" name="selectedAddress" [(ngModel)]="selectedAddressId">
+        <label [for]="address.id">
+          <div>
+            <span class="name">{{ address.fullName }}</span>
+          </div>
+          <div>
+            No.{{ address.address }}, {{ address.city }}, {{ address.state }} - <span class="pin-code">{{ address.pinCode }}</span>, {{ address.country }}
+          </div>
+          <div class="mobile-number">Ph: {{ address.mobileNumber }}</div>
+        </label>
+      </div>
+    </div>
+    <button *ngIf="selectedAddressId" (click)="deliverHere()">Deliver Here</button>
+  </div>
+
+  <div class="add-new-address" (click)="showAddressForm = !showAddressForm">
+    + Add New Address
+  </div>
+
+  <div class="card-container" *ngIf="showAddressForm">
+    <form (ngSubmit)="saveAddress()">
+      <div class="form-row">
+        <div class="form-box">
+          <input type="text" id="fullName" name="fullName" [(ngModel)]="newAddress.fullName" placeholder="Full Name" required>
+        </div>
+        <div class="form-box">
+          <input type="tel" id="mobileNumber" name="mobileNumber" [(ngModel)]="newAddress.mobileNumber" placeholder="Mobile Number" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-box">
+          <textarea id="address" name="address" [(ngModel)]="newAddress.address" placeholder="Address" rows="4" required></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-box">
+          <input type="text" id="pinCode" name="pinCode" [(ngModel)]="newAddress.pinCode" placeholder="Pin Code" required>
+        </div>
+        <div class="form-box">
+          <input type="text" id="country" name="country" [(ngModel)]="newAddress.country" placeholder="Country" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-box">
+          <input type="text" id="state" name="state" [(ngModel)]="newAddress.state" placeholder="State" required>
+        </div>
+        <div class="form-box">
+          <input type="text" id="city" name="city" [(ngModel)]="newAddress.city" placeholder="City" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-box">
+          <input type="text" id="landmark" name="landmark" [(ngModel)]="newAddress.landmark" placeholder="Landmark (Optional)">
+        </div>
+        <div class="form-box">
+          <input type="tel" id="alternateMobile" name="alternateMobile" [(ngModel)]="newAddress.alternateMobile" placeholder="Alternate Mobile (Optional)">
+        </div>
+      </div>
+
+      <button type="submit">Save and Deliver Here</button>
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+.payment-container {
+    margin: 40px;
+    margin-left: 70px;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  .payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+ 
+  .payment-option input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .payment-option:not(:last-child) {
+    margin-bottom: 15px; /* Space between each payment option */
+  }
+  
+  .confirm-button {
+    padding: 10px 20px;
+    background-color: #4a4e69;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: auto; /* Moves the button to the right */
+    display: flex;
+    justify-content: end;
+  }
+  
+  .confirm-button:hover {
+    background-color: #485291;
+  }
+  
+
+  .payment-option label img {
+    width: 32px; /* Adjust the width as needed */
+    height: 32px; /* Adjust the height as needed */
+    margin-right: 10px; /* Optional: Add margin to the right for spacing */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

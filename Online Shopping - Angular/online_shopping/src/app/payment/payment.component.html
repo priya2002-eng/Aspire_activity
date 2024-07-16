@@ -1,0 +1,13 @@
+<div class="payment-container">
+  <h2>Select Payment Method</h2>
+
+  <div class="payment-option" *ngFor="let option of paymentOptions">
+    <input type="radio" id="{{ option.id }}" name="paymentOption" [(ngModel)]="selectedPaymentOption" [value]="option.id">
+    <label for="{{ option.id }}">
+      <img src="{{ option.image }}" alt="{{ option.name }} Icon"> <!-- Display image before label -->
+      {{ option.name }}
+    </label>
+  </div>
+
+  <button class="confirm-button" (click)="confirmOrder()">Confirm Order</button>
+</div>

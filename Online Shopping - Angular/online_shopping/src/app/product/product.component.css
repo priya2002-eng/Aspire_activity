@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  position: relative;
+}
+
+.filters {
+  width: 13%;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  /* background-color: #f4f4f4; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 1; /* Lower z-index to be covered by the footer */
+  margin-top: 60px;
+}
+
+.products-grid {
+  width: 90%;
+  padding: 25px;
+  margin-left: 17%;
+  overflow-y: auto;
+}
+
+.card {
+  display: inline-block;
+  width: calc(23% - 2px);
+  margin: 2%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.00); /* Increase size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  max-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+}
+
+.card-content p {
+  margin: 5px 0;
+}
+
+.rating .stars {
+  color: gold;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  z-index: 2; /* Higher z-index to cover the filters */
+}

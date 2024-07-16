@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Sign Up</h2>
+  <form (ngSubmit)="signUp()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" class="form-control" required [(ngModel)]="name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" class="form-control" required [(ngModel)]="email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" class="form-control" required [(ngModel)]="password" name="password">
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" class="form-control" required [(ngModel)]="mobile" name="mobile">
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+    <div *ngIf="errorMessage" class="alert alert-danger mt-2">{{ errorMessage }}</div>
+    <div *ngIf="successMessage" class="alert alert-success mt-2">{{ successMessage }}</div>
+  </form>
+</div>

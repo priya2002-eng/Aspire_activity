@@ -1,0 +1,38 @@
+<div *ngIf="product" class="product-container">
+  <div class="product-image">
+    <img [src]="product.image" alt="{{ product.name }}" />
+  </div>
+  <div class="product-details">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.shortDescription }}</p>
+    <p><strong>Brand:</strong> {{ product.brand }}</p>
+    <p class="product-price"><strong>Price:</strong> ${{ product.price }}</p>
+    <p><strong>Rating:</strong> <span class="rating">{{ getStars(product.rating) }}</span></p>
+    <h3>Specifications</h3>
+    <ul>
+      <li *ngFor="let spec of product.specifications">
+        <strong>{{ spec.key }}:</strong> {{ spec.value }}
+      </li>
+    </ul>
+    <div class="product-colors">
+      <strong>Colors:</strong>
+      <div class="color-options">
+        <span *ngFor="let color of product.colors" [style.background-color]="color" class="color-circle" (click)="selectColor(color)" [class.selected]="color === selectedColor"></span>
+      </div>
+    </div>
+    <div class="product-sizes">
+      <strong>Sizes:</strong>
+      <div class="size-options">
+        <span *ngFor="let size of product.sizes" class="size-box" (click)="selectSize(size)" [class.selected]="size === selectedSize">
+          {{ size }}
+        </span>
+      </div>
+    </div>
+    <h3>Customer Reviews</h3>
+    <div *ngFor="let review of product.reviews" class="customer-review">
+      <p><strong>{{ review.username }}</strong> rated <span class="rating">{{ getStars(review.rating) }}</span></p>
+      <p>{{ review.comment }}</p>
+    </div>
+    <button class="add-to-cart-button" (click)="addToCart(product)">Add to Cart</button>
+  </div>
+</div>
