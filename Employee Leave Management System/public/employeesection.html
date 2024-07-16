@@ -12,7 +12,6 @@
 
 <div class="wrapper">
     <div class="sidebar">
-  
         <img src="/assets/icon.png">
         <br>
         <ul>
@@ -21,34 +20,24 @@
             <li><a href="leave_types.html"><i class="fas fa-calendar"></i>Leave Types</a></li>
             <li><a href="manage_leave.html"><i class="fas fa-project-diagram"></i>Manage Leave</a></li>
         </ul> 
-        <!-- <div class="social_media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-      </div> -->
     </div>
     <div class="main_content">
         <div class="header" style="font-size: large;"><b><h2>ELMS</h2></b>
           <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn" id="logoutBtn">Logout</button>
-            <!-- <div id="myDropdown" class="dropdown-content">
-              <a href="#home"><i class="uil uil-signout"></i>Logout</a>
-            </div> -->
+            <button onclick="logout()" class="dropbtn" id="logoutBtn">Logout</button>
           </div>
-          <!-- <button type="button">Admin</button> -->
         </div>  
         
-        <!-- Include the content of employee.html here -->
+        <!-- Add Employee button -->
         <div class="body-table">
           <div class="container-table">
             <div class="header-table">
               <h1>Manage Employee</h1>
-              <!-- Here's the Add Employee button -->
               <div class="add-employee-btn">
                 <button id="addEmployeeBtn">Add Employee</button>
               </div>
             </div>
-          
+            <!-- Employee table -->
             <div class="table-container">
               <table>
                 <thead>
@@ -57,130 +46,96 @@
                     <th>Name</th>
                     <th>Employee ID</th>
                     <th>Department</th>
-                    <th>Status</th>
+                    <th>Contact</th>
                     <th>Action</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td></td>
-                    <td>John Doe</td>
-                    <td>EL12345</td>
-                    <td>HR</td>
-                    <td>Active</td>
-                    <td>
-                      <button class="manage-btn" id="manageEmployeeBtn">Manage</button>
-                      <button class="delete-btn">Delete</button>
-                    </td>
-                  </tr>
-          
-                  <tr>
-                      <td></td>
-                      <td>Joe</td>
-                      <td>EL65486</td>
-                      <td>Service Line</td>
-                      <td>Active</td>
-                      <td>
-                        <button class="manage-btn">Manage</button>
-                        <button class="delete-btn">Delete</button>
-                      </td>
-                  </tr>
-          
-                  <tr>
-                      <td></td>
-                      <td>Rinku</td>
-                      <td>EL78654</td>
-                      <td>Sales</td>
-                      <td>Inactive</td>
-                      <td>
-                          <button class="manage-btn">Manage</button>
-                          <button class="delete-btn">Delete</button>
-                      </td>
-                  </tr>
-                  <!-- Add more rows as needed -->
+                <tbody id="employeeTableBody">
+                  <!-- Data will be populated dynamically here -->
                 </tbody>
               </table>
             </div>
           </div>
         </div> 
 
-        <!-- Form section -->
-        <section class="container" id="addEmployeeForm">
+        <!-- Add Employee form section -->
+        <section class="container" id="addEmployeeForm" style="display: none;">
           <i class="fa fa-times-circle close-icon" id="closeFormAdd"></i>
           <header>Add Employee</header>
-          <form action="#" class="form">
-            <!-- Form fields here -->
+          <form action="#" class="form" id="addEmployeeFormElement">
             <div class="input-box">
               <label>Full Name</label>
-              <input type="text" placeholder="Enter full name" required />
+              <input type="text" name="fullName" placeholder="Enter full name" required />
             </div>
-    
+            
             <div class="input-box">
               <label>Email Address</label>
-              <input type="text" placeholder="Enter email address" required />
+              <input type="text" name="email" placeholder="Enter email address" required />
             </div>
-
+        
             <div class="input-box">
               <label>Employee ID</label>
-              <input type="text" placeholder="Enter Employee ID" required />
+              <input type="text" name="employeeId" placeholder="Enter Employee ID" required />
             </div>
-    
+        
             <div class="input-box">
               <label>Set Username</label>
-              <input type="text" placeholder="Enter username" required />
+              <input type="text" name="username" placeholder="Enter username" required />
             </div>
-    
+        
             <div class="input-box">
               <div class="input-box address">
                 <div class="input-box">
                   <label>Department</label>
                   <div class="select-box">
-                      <select>
-                        <option hidden>Department</option>
-                        <option>Service Line</option>
-                        <option>Human Resource</option>
-                        <option>Accounts</option>
-                        <option>Sales</option>
-                        <option>Helpdesk</option>
-                      </select>
-                    </div>
+                    <select name="department">
+                      <option hidden>Department</option>
+                      <option>Service Line</option>
+                      <option>Human Resource</option>
+                      <option>Accounts</option>
+                      <option>Sales</option>
+                      <option>Helpdesk</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
-    
+        
             <div class="column">
               <div class="input-box">
                 <label>Phone Number</label>
-                <input type="number" placeholder="Enter phone number" required />
+                <input type="tel" name="phoneNumber" placeholder="Enter phone number" required />
               </div>
               <div class="input-box">
                 <label>Birth Date</label>
-                <input type="date" placeholder="Enter birth date" required />
+                <input type="date" name="birthDate" placeholder="Enter birth date" required />
               </div>
             </div>
+        
             <div class="gender-box">
               <h3>Gender</h3>
               <div class="gender-option">
                 <div class="gender">
-                  <input type="radio" id="check-male" name="gender" />
-                  <label for="check-male">male</label>
+                  <input type="radio" id="check-male" name="gender" value="male" />
+                  <label for="check-male">Male</label>
                 </div>
                 <div class="gender">
-                  <input type="radio" id="check-female" name="gender" />
+                  <input type="radio" id="check-female" name="gender" value="female" />
                   <label for="check-female">Female</label>
                 </div>
                 <div class="gender">
-                  <input type="radio" id="check-other" name="gender" />
+                  <input type="radio" id="check-other" name="gender" value="others" />
                   <label for="check-other">Others</label>
                 </div>
               </div>
             </div>
+        
             <div class="input-box address">
               <label>Address</label>
-              <input type="text" placeholder="Enter street address" required />
+              <input type="text" name="streetAddress" placeholder="Enter street address" required />
               <div class="column">
                 <div class="select-box">
-                  <select>
+                  <select name="country">
                     <option hidden>Country</option>
                     <option>America</option>
                     <option>Japan</option>
@@ -188,125 +143,115 @@
                     <option>Nepal</option>
                   </select>
                 </div>
-                <input type="text" placeholder="Enter your city" required />
+                <input type="text" name="city" placeholder="Enter your city" required />
               </div>
               <div class="column">
-                <input type="text" placeholder="Enter your region" required />
-                <input type="text" placeholder="Enter postal code" required />
+                <input type="text" name="region" placeholder="Enter your region" required />
+                <input type="text" name="postalCode" placeholder="Enter postal code" required />
               </div>
-    
-              <div class="input-box">
-                <label>Set Password</label>
-                <input type="text" placeholder="password" required />
-                <input type="text" placeholder="confirm password" required />
-              </div>
-    
             </div>
-            <button>Add</button>
+        
+            <div class="input-box">
+              <label>Set Password</label>
+              <input type="password" name="password" placeholder="password" required />
+              <input type="password" name="confirmPassword" placeholder="confirm password" required />
+            </div>
+        
+            <button type="submit">Add</button>
           </form>
-        </section>   
+        </section>
 
-        <!-- Manage section -->
-          <section class="container" id="manageEmployeeForm">
-            <i class="fa fa-times-circle close-icon" id="closeFormManage"></i>
-            <header>Manage Employee</header>
-            <form action="#" class="form">
+        <!-- Manage Employee Form Section -->
+        <section class="container" id="manageEmployeeForm" style="display: none;">
+          <i class="fa fa-times-circle close-icon" id="closeFormManage"></i>
+          <header>Manage Employee</header>
+          <form action="#" class="form" id="manageEmployeeFormElement">
               <div class="input-box">
-                <label>Full Name</label>
-                <input type="text" placeholder="Enter full name" value="John Doe" required />
+                  <label>Full Name</label>
+                  <input type="text" name="fullName" placeholder="Enter full name" required />
               </div>
-      
               <div class="input-box">
-                <label>Email Address</label>
-                <input type="text" placeholder="Enter email address" value="john@gmail.com" required/>
+                  <label>Email Address</label>
+                  <input type="email" name="email" placeholder="Enter email address" required />
               </div>
-
               <div class="input-box">
-                <label>Employee ID</label>
-                <input type="text" placeholder="Enter Employee ID" value="EL123456" required />
+                  <label>Employee ID</label>
+                  <input type="text" name="employeeId" placeholder="Enter Employee ID" readonly />
               </div>
-      
               <div class="input-box">
-                <label>Set Username</label>
-                <input type="text" placeholder="Enter username" value="john" required />
+                  <label>Set Username</label>
+                  <input type="text" name="username" placeholder="Enter username" required />
               </div>
-      
               <div class="input-box">
-                <div class="input-box address">
-                  <div class="input-box">
-                    <label>Department</label>
-                    <div class="select-box">
-                        <select>
-                          <option hidden>Department</option>
+                  <label>Department</label>
+                  <div class="select-box">
+                      <select name="department" required>
+                          <option value="" hidden>Department</option>
                           <option>Service Line</option>
-                          <option selected>Human Resource</option>
+                          <option>Human Resource</option>
                           <option>Accounts</option>
                           <option>Sales</option>
                           <option>Helpdesk</option>
-                        </select>
-                      </div>
+                      </select>
                   </div>
-                </div>
               </div>
-      
               <div class="column">
-                <div class="input-box">
-                  <label>Phone Number</label>
-                  <input type="number" placeholder="Enter phone number" value="8563942685" required/>
-                </div>
-                <div class="input-box">
-                  <label>Birth Date</label>
-                  <input type="date" placeholder="Enter birth date" value="2002-05-21" required />
-                </div>
+                  <div class="input-box">
+                      <label>Phone Number</label>
+                      <input type="tel" name="phoneNumber" placeholder="Enter phone number" required />
+                  </div>
+                  <div class="input-box">
+                      <label>Birth Date</label>
+                      <input type="date" name="birthDate" placeholder="Enter birth date" required />
+                  </div>
               </div>
               <div class="gender-box">
-                <h3>Gender</h3>
-                <div class="gender-option">
-                  <div class="gender">
-                    <input type="radio" id="check-male" name="gender" checked/>
-                    <label for="check-male">male</label>
+                  <h3>Gender</h3>
+                  <div class="gender-option">
+                      <div class="gender">
+                          <input type="radio" id="manage-check-male" name="gender" value="male" required />
+                          <label for="manage-check-male">Male</label>
+                      </div>
+                      <div class="gender">
+                          <input type="radio" id="manage-check-female" name="gender" value="female" required />
+                          <label for="manage-check-female">Female</label>
+                      </div>
+                      <div class="gender">
+                          <input type="radio" id="manage-check-other" name="gender" value="others" required />
+                          <label for="manage-check-other">Others</label>
+                      </div>
                   </div>
-                  <div class="gender">
-                    <input type="radio" id="check-female" name="gender" />
-                    <label for="check-female">Female</label>
-                  </div>
-                  <div class="gender">
-                    <input type="radio" id="check-other" name="gender" />
-                    <label for="check-other">Others</label>
-                  </div>
-                </div>
               </div>
               <div class="input-box address">
-                <label>Address</label>
-                <input type="text" placeholder="Enter street address" value="No.12, Independence Avenue" required />
-                <div class="column">
-                  <div class="select-box">
-                    <select>
-                      <option hidden>Country</option>
-                      <option selected>America</option>
-                      <option>Japan</option>
-                      <option>India</option>
-                      <option>Nepal</option>
-                    </select>
+                  <label>Address</label>
+                  <input type="text" name="streetAddress" placeholder="Enter street address" required />
+                  <div class="column">
+                      <div class="select-box">
+                          <select name="country" required>
+                              <option value="" hidden>Country</option>
+                              <option>America</option>
+                              <option>Japan</option>
+                              <option>India</option>
+                              <option>Nepal</option>
+                          </select>
+                      </div>
+                      <input type="text" name="city" placeholder="Enter your city" required />
                   </div>
-                  <input type="text" placeholder="Enter your city"  value="California" required />
-                </div>
-                <div class="column">
-                  <input type="text" placeholder="Enter your region" value="Sasta" required />
-                  <input type="text" placeholder="Enter postal code" value="542-01-86" required />
-                </div>
-      
-                <div class="input-box">
-                  <label>Set Password</label>
-                  <input type="password" placeholder="password" value="48798123121" required />
-                  <input type="password" placeholder="confirm password" value="48798123121" required />
-                </div>
-      
+                  <div class="column">
+                      <input type="text" name="region" placeholder="Enter your region" required />
+                      <input type="text" name="postalCode" placeholder="Enter postal code" required />
+                  </div>
               </div>
-              <button>Update</button>
-            </form>
-          </section>
+              <div class="input-box">
+                  <label>Set Password</label>
+                  <input type="password" name="password" placeholder="password" required />
+                  <input type="password" name="confirmPassword" placeholder="confirm password" required />
+              </div>
+              <button type="submit">Update</button>
+          </form>
+        </section>
 
+        
     </div>
 </div>
 <footer>
@@ -315,3 +260,4 @@
 <script src="js/employeesection.js"></script>
 </body>
 </html>
+

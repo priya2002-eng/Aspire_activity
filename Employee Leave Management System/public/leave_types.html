@@ -12,7 +12,6 @@
 
 <div class="wrapper">
     <div class="sidebar">
-  
         <img src="/assets/icon.png">
         <br>
         <ul>
@@ -20,27 +19,19 @@
             <li><a href="employeesection.html"><i class="fas fa-address-card"></i>Employee Section</a></li>
             <li><a href="leave_types.html"><i class="fas fa-calendar"></i>Leave Types</a></li>
             <li><a href="manage_leave.html"><i class="fas fa-project-diagram"></i>Manage Leave</a></li>
-        </ul> 
-        <!-- <div class="social_media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-      </div> -->
+        </ul>
     </div>
     <div class="main_content">
         <div class="header" style="font-size: large;"><b><h2>ELMS</h2></b>
           <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn" id="logoutBtn" >Logout</button>
+            <button onclick="logout()" class="dropbtn" id="logoutBtn">Logout</button>
           </div>
-          <!-- <button type="button">Admin</button> -->
-        </div>  
-        
-        <!-- Include the content of employee.html here -->
+        </div>
+
         <div class="body-table">
           <div class="container-table">
             <div class="header-table">
-              <h1>Manage Leave types</h1>
-              <!-- Here's the Add Employee button -->
+              <h1>Manage Leave Types</h1>
               <div class="add-employee-btn">
                 <button id="addEmployeeBtn">Add New Leave Type</button>
               </div>
@@ -58,78 +49,52 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td></td>
-                    <td>Personal Time Off</td>
-                    <td>To manage personal works</td>
-                    <td>13/04/2024</td>
-                    <td>
-                      <button class="manage-btn" id="manageEmployeeBtn">Manage</button>
-                      <button class="delete-btn">Delete</button>
-                    </td>
-                  </tr>
-          
-                  <tr>
-                    <td></td>
-                    <td>Medical Leave</td>
-                    <td>Related to health issues</td>
-                    <td>05/12/2023</td>
-                    <td>
-                      <button class="manage-btn">Manage</button>
-                      <button class="delete-btn">Delete</button>
-                    </td>
-                  </tr>
-          
-                  <!-- Add more rows as needed -->
+                  <!-- Rows will be populated by JavaScript -->
                 </tbody>
               </table>
             </div>
           </div>
-        </div> 
+        </div>
 
-        <!-- Form section -->
+        <!-- Add New Leave Type Form -->
         <section class="container" id="addEmployeeForm">
           <i class="fa fa-times-circle close-icon" id="closeFormAdd"></i>
           <header>Add New Leave Type</header>
-          <form action="#" class="form">
+          <form class="form">
             <div class="input-box">
               <label>Leave Type</label>
-              <input type="text" placeholder="Enter leave type" required />
+              <input type="text" name="leaveType" placeholder="Enter leave type" required />
             </div>
-    
             <div class="input-box">
               <label>Short Description</label>
-              <input type="text" placeholder="Describe leave type" required />
+              <input type="text" name="description" placeholder="Describe leave type" required />
             </div>
-    
             <button>Add</button>
           </form>
-        </section>   
+        </section>
 
-        <!-- Manage section -->
-          <section class="container" id="manageEmployeeForm">
-            <i class="fa fa-times-circle close-icon" id="closeFormManage"></i>
-            <header>Manage Employee</header>
-            <form action="#" class="form">
-              <div class="input-box">
-                <label>Leave Type</label>
-                <input type="text" placeholder="Enter leave type" value="Personal Time Off" required />
-              </div>
-      
-              <div class="input-box">
-                <label>Short Description</label>
-                <input type="text" placeholder="Describe leave type" value="To manage personal works" required />
-              </div>
-      
-              <button>Update</button>
-            </form>
-          </section>
+        <!-- Manage Leave Type Form -->
+<section class="container" id="manageLeaveTypeForm" style="display:none;">
+  <i class="fa fa-times-circle close-icon" id="closeFormManage"></i>
+  <header>Manage Leave Type</header>
+  <form class="form">
+    <div class="input-box">
+      <label>Leave Type</label>
+      <input type="text" name="leaveType" placeholder="Enter leave type" required />
+    </div>
+    <div class="input-box">
+      <label>Short Description</label>
+      <input type="text" name="description" placeholder="Describe leave type" required />
+    </div>
+    <button type="submit">Update</button>
+  </form>
+</section>
 
     </div>
 </div>
 <footer>
   <p>&copy; 2024 ELMS. All rights reserved.</p>
 </footer>
-<script src="js/employeesection.js"></script>
+<script src="js/leave_types.js"></script>
 </body>
 </html>

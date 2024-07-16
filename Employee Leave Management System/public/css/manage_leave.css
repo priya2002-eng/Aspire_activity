@@ -417,6 +417,11 @@ h1 {
   margin: 0 5px;
 }
 
+/* Optional: Add styles to hide any unwanted elements */
+.unwanted-box {
+  display: none;
+}
+
 .container .approve-btn {
   background-color: green;
 }

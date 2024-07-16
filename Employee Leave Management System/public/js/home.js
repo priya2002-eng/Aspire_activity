@@ -1,28 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+// public/js/home.js
 
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
+// Function to fetch data from the backend API and update the HTML content
+async function fetchDataAndUpdate() {
+  try {
+    const response = await fetch('/api/home/counts');
+    if (!response.ok) {
+      throw new Error('Failed to fetch data');
     }
-  }
+    const data = await response.json();
 
-  function logout() {
-    // Redirect to index.html
-    window.location.href = "index.html";
+    // Update the HTML content dynamically based on the fetched data
+    document.getElementById('registeredEmployeesCount').textContent = data.empCount;
+    document.getElementById('leaveTypesCount').textContent = data.leaveTypesCount;
+    document.getElementById('pendingApplicationsCount').textContent = data.pendingCount;
+    document.getElementById('approvedApplicationsCount').textContent = data.approvedCount;
+    document.getElementById('declinedApplicationsCount').textContent = data.declinedCount;
+  } catch (error) {
+    console.error('Error fetching data:', error.message);
+    // Display an error message to the user
+    document.getElementById('errorContainer').textContent = 'Failed to fetch data. Please try again later.';
   }
-  
-  document.getElementById("logoutBtn").addEventListener("click", function() {
-    logout();
-  });
+}
+
+// Call the fetchDataAndUpdate function when the page loads
+window.onload = function () {
+  fetchDataAndUpdate();
+};
+
+function logout() {
+  window.location.href = "index.html";
+}
+
+document.getElementById("logoutBtn").addEventListener("click", function() {
+  logout();
 });
