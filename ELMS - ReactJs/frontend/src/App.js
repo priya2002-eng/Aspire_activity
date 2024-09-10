@@ -1,7 +1,7 @@
-<!-- Title: Created an Employee Time Off Management System
-Author: Priyadharshini S
-Created Date: 03/08/2024
-Last modified date: 10/09/2024 -->
+// Title: Created an Employee Time Off Management System
+// Author: Priyadharshini S
+// Created Date: 03/08/2024
+// Last modified date: 10/09/2024
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
