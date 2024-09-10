@@ -1,3 +1,8 @@
+<!-- Title: Created an Employee Time Off Management System
+Author: Priyadharshini S
+Created Date: 03/08/2024
+Last modified date: 10/09/2024 -->
+
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
@@ -24,26 +29,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Routes>
-
-          
-          {/* <Routes> // for hoc session management
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/" element={<PrivateRoute><HomePage /></PrivateRoute>} />
-            <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />
-            <Route path="/employee-section" element={<PrivateRoute><EmployeeSection /></PrivateRoute>} />
-            <Route path="/leave-types" element={<PrivateRoute><LeaveTypes /></PrivateRoute>} />
-            <Route path="/manage-leave" element={<PrivateRoute><ManageLeave /></PrivateRoute>} />
-            <Route path="/change-password" element={<PrivateRoute><ChangePassword /></PrivateRoute>} />
-          </Routes> */}
         </Router>
 
-    // <div className="App">
-    //   <ApplyLeave/>
-
-    // </div>
-
-    
   );
 }
 
